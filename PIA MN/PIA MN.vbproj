@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97A71F56-D831-4C2C-AC7C-0816CEDA5D1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PIA_MN.My.MyApplication</StartupObject>
+    <RootNamespace>PIA_MN</RootNamespace>
+    <AssemblyName>PIA MN</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PIA MN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PIA MN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Creditos.Designer.vb">
+      <DependentUpon>Creditos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Creditos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu Principal.Designer.vb">
+      <DependentUpon>Menu Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_1.Designer.vb">
+      <DependentUpon>EGaussiana_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_2.Designer.vb">
+      <DependentUpon>EGaussiana_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_1.Designer.vb">
+      <DependentUpon>GaussJordan_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_2.Designer.vb">
+      <DependentUpon>GaussJordan_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_1.Designer.vb">
+      <DependentUpon>G-S_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_2.Designer.vb">
+      <DependentUpon>G-S_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_1.Designer.vb">
+      <DependentUpon>Jacobi_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_2.Designer.vb">
+      <DependentUpon>Jacobi_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1.Designer.vb">
+      <DependentUpon>Montante_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1_Respuesta.Designer.vb">
+      <DependentUpon>Montante_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2.Designer.vb">
+      <DependentUpon>Montante_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2_Respuesta.Designer.vb">
+      <DependentUpon>Montante_2_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1_Respuesta.Designer.vb">
+      <DependentUpon>Grafico_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1_Respuesta.Designer.vb">
+      <DependentUpon>N-R_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1.Designer.vb">
+      <DependentUpon>PuntoFijo_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1_Respuesta.Designer.vb">
+      <DependentUpon>PuntoFijo_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_2.Designer.vb">
+      <DependentUpon>PuntoFijo_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1.Designer.vb">
+      <DependentUpon>Secante_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1_Respuesta.Designer.vb">
+      <DependentUpon>Secante_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_2.Designer.vb">
+      <DependentUpon>Secante_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_1.Designer.vb">
+      <DependentUpon>Bisectriz_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_2.Designer.vb">
+      <DependentUpon>Bisectriz_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_1.Designer.vb">
+      <DependentUpon>FalsaPosicion_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_2.Designer.vb">
+      <DependentUpon>FalsaPosicion_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1.Designer.vb">
+      <DependentUpon>Grafico_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_2.Designer.vb">
+      <DependentUpon>Grafico_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1.Designer.vb">
+      <DependentUpon>N-R_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_2.Designer.vb">
+      <DependentUpon>N-R_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\NewtonDD_1_Respuesta.Designer.vb">
+      <DependentUpon>NewtonDD_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\NewtonDD_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_1_Respuesta.Designer.vb">
+      <DependentUpon>LaGrange_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_1.Designer.vb">
+      <DependentUpon>LaGrange_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_2.Designer.vb">
+      <DependentUpon>LaGrange_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\LaGrange\LaGrange_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Lineal\Lineal_1.Designer.vb">
+      <DependentUpon>Lineal_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Lineal\Lineal_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Lineal\Lineal_2.Designer.vb">
+      <DependentUpon>Lineal_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Lineal\Lineal_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_1.Designer.vb">
+      <DependentUpon>Newton-DifDivididas_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_2.Designer.vb">
+      <DependentUpon>Newton-DifDivididas_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_1.Designer.vb">
+      <DependentUpon>Newton-HaciaAdelante_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_2.Designer.vb">
+      <DependentUpon>Newton-HaciaAdelante_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_1.Designer.vb">
+      <DependentUpon>Newton-HaciaAtras_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_2.Designer.vb">
+      <DependentUpon>Newton-HaciaAtras_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_1.Designer.vb">
+      <DependentUpon>R-KOrdenSuperior_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_2.Designer.vb">
+      <DependentUpon>R-KOrdenSuperior_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_1.Designer.vb">
+      <DependentUpon>Newton-CotesA_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_2.Designer.vb">
+      <DependentUpon>Newton-CotesA_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1_Respuesta.Designer.vb">
+      <DependentUpon>Newton_CotesA_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.Designer.vb">
+      <DependentUpon>Regla_Trapezoida_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.Designer.vb">
+      <DependentUpon>simpson13_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.Designer.vb">
+      <DependentUpon>simpson38_1_Respuesta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_1.Designer.vb">
+      <DependentUpon>Newton-CotesC_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_2.Designer.vb">
+      <DependentUpon>Newton-CotesC_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_1.Designer.vb">
+      <DependentUpon>R1TercioSimpson_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_2.Designer.vb">
+      <DependentUpon>R1TercioSimpson_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_1.Designer.vb">
+      <DependentUpon>R3OctavosSimpson_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_2.Designer.vb">
+      <DependentUpon>R3OctavosSimpson_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_1.Designer.vb">
+      <DependentUpon>Trapezoidal_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_2.Designer.vb">
+      <DependentUpon>Trapezoidal_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_1.Designer.vb">
+      <DependentUpon>CuadraticaCubica_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_2.Designer.vb">
+      <DependentUpon>CuadraticaCubica_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_1.Designer.vb">
+      <DependentUpon>LinealCuadraticaFuncion_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_2.Designer.vb">
+      <DependentUpon>LinealCuadraticaFuncion_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LineaRecta\LineaRecta_1.Designer.vb">
+      <DependentUpon>LineaRecta_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MN_OR\MinimosCuadrados\LineaRecta\LineaRecta_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Creditos.resx">
+      <DependentUpon>Creditos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu Principal.resx">
+      <DependentUpon>Menu Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_1.resx">
+      <DependentUpon>EGaussiana_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\EliminacionGaussiana\EGaussiana_2.resx">
+      <DependentUpon>EGaussiana_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_1.resx">
+      <DependentUpon>GaussJordan_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Gauss-Jordan\GaussJordan_2.resx">
+      <DependentUpon>GaussJordan_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_1.resx">
+      <DependentUpon>G-S_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Gauss-Seidel\G-S_2.resx">
+      <DependentUpon>G-S_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_1.resx">
+      <DependentUpon>Jacobi_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Jacobi\Jacobi_2.resx">
+      <DependentUpon>Jacobi_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1.resx">
+      <DependentUpon>Montante_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Montante\Montante_1_Respuesta.resx">
+      <DependentUpon>Montante_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2.resx">
+      <DependentUpon>Montante_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones Lineales\Montante\Montante_2_Respuesta.resx">
+      <DependentUpon>Montante_2_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1_Respuesta.resx">
+      <DependentUpon>Grafico_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1_Respuesta.resx">
+      <DependentUpon>N-R_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1.resx">
+      <DependentUpon>PuntoFijo_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_1_Respuesta.resx">
+      <DependentUpon>PuntoFijo_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\PuntoFijo\PuntoFijo_2.resx">
+      <DependentUpon>PuntoFijo_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1.resx">
+      <DependentUpon>Secante_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_1_Respuesta.resx">
+      <DependentUpon>Secante_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Secante\Secante_2.resx">
+      <DependentUpon>Secante_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_1.resx">
+      <DependentUpon>Bisectriz_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Bisectriz\Bisectriz_2.resx">
+      <DependentUpon>Bisectriz_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_1.resx">
+      <DependentUpon>FalsaPosicion_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\FalsaPosicion\FalsaPosicion_2.resx">
+      <DependentUpon>FalsaPosicion_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_1.resx">
+      <DependentUpon>Grafico_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Grafico\Grafico_2.resx">
+      <DependentUpon>Grafico_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_1.resx">
+      <DependentUpon>N-R_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Ecuaciones No Lineales\Newton-Raphson\N-R_2.resx">
+      <DependentUpon>N-R_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\LaGrange\LaGrange_1_Respuesta.resx">
+      <DependentUpon>LaGrange_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\LaGrange\LaGrange_1.resx">
+      <DependentUpon>LaGrange_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\LaGrange\LaGrange_2.resx">
+      <DependentUpon>LaGrange_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\LaGrange\NewtonDD_1_Respuesta.resx">
+      <DependentUpon>NewtonDD_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Lineal\Lineal_1.resx">
+      <DependentUpon>Lineal_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Lineal\Lineal_2.resx">
+      <DependentUpon>Lineal_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_1.resx">
+      <DependentUpon>Newton-DifDivididas_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-DifDivididas\Newton-DifDivididas_2.resx">
+      <DependentUpon>Newton-DifDivididas_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_1.resx">
+      <DependentUpon>Newton-HaciaAdelante_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-HaciaAdelante\Newton-HaciaAdelante_2.resx">
+      <DependentUpon>Newton-HaciaAdelante_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_1.resx">
+      <DependentUpon>Newton-HaciaAtras_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_MC\Interpolacion\Newton-HaciaAtras\Newton-HaciaAtras_2.resx">
+      <DependentUpon>Newton-HaciaAtras_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_1.resx">
+      <DependentUpon>R-KOrdenSuperior_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\EcuacionesDiferencialesOrdinarias\R-KOrdenSuperior\R-KOrdenSuperior_2.resx">
+      <DependentUpon>R-KOrdenSuperior_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_1.resx">
+      <DependentUpon>Newton-CotesA_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Newton-CotesA_2.resx">
+      <DependentUpon>Newton-CotesA_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1Respuesta.resx" />
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1_Respuesta.resx">
+      <DependentUpon>Newton_CotesA_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.resx">
+      <DependentUpon>Regla_Trapezoida_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.resx">
+      <DependentUpon>simpson13_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.resx">
+      <DependentUpon>simpson38_1_Respuesta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_1.resx">
+      <DependentUpon>Newton-CotesC_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_2.resx">
+      <DependentUpon>Newton-CotesC_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_1.resx">
+      <DependentUpon>R1TercioSimpson_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\R1TercioSimpson\R1TercioSimpson_2.resx">
+      <DependentUpon>R1TercioSimpson_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_1.resx">
+      <DependentUpon>R3OctavosSimpson_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\R3OctavosSimpson\R3OctavosSimpson_2.resx">
+      <DependentUpon>R3OctavosSimpson_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_1.resx">
+      <DependentUpon>Trapezoidal_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\Integracion\Trapezoidal\Trapezoidal_2.resx">
+      <DependentUpon>Trapezoidal_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_1.resx">
+      <DependentUpon>CuadraticaCubica_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\MinimosCuadrados\CuadraticaCubica\CuadraticaCubica_2.resx">
+      <DependentUpon>CuadraticaCubica_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_1.resx">
+      <DependentUpon>LinealCuadraticaFuncion_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\MinimosCuadrados\LinealCuadraticaFuncion\LinealCuadraticaFuncion_2.resx">
+      <DependentUpon>LinealCuadraticaFuncion_2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MN_OR\MinimosCuadrados\LineaRecta\LineaRecta_1.resx">
+      <DependentUpon>LineaRecta_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

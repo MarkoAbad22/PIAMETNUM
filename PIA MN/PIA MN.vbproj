@@ -356,22 +356,22 @@
     <Compile Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1_Respuesta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.Designer.vb">
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Regla_Trapezoida_1_Respuesta.Designer.vb">
       <DependentUpon>Regla_Trapezoida_1_Respuesta.vb</DependentUpon>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.vb">
+    <Compile Include="MN_OR\Integracion\Trapezoidal\Regla_Trapezoida_1_Respuesta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.Designer.vb">
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\simpson13_1_Respuesta.Designer.vb">
       <DependentUpon>simpson13_1_Respuesta.vb</DependentUpon>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.vb">
+    <Compile Include="MN_OR\Integracion\R1TercioSimpson\simpson13_1_Respuesta.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.Designer.vb">
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\simpson38_1_Respuesta.Designer.vb">
       <DependentUpon>simpson38_1_Respuesta.vb</DependentUpon>
     </Compile>
-    <Compile Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.vb">
+    <Compile Include="MN_OR\Integracion\R3OctavosSimpson\simpson38_1_Respuesta.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_1.Designer.vb">
@@ -611,13 +611,13 @@
     <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Newton_CotesA_1_Respuesta.resx">
       <DependentUpon>Newton_CotesA_1_Respuesta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\Regla_Trapezoida_1_Respuesta.resx">
+    <EmbeddedResource Include="MN_OR\Integracion\Trapezoidal\Regla_Trapezoida_1_Respuesta.resx">
       <DependentUpon>Regla_Trapezoida_1_Respuesta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\simpson13_1_Respuesta.resx">
+    <EmbeddedResource Include="MN_OR\Integracion\R1TercioSimpson\simpson13_1_Respuesta.resx">
       <DependentUpon>simpson13_1_Respuesta.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesA\simpson38_1_Respuesta.resx">
+    <EmbeddedResource Include="MN_OR\Integracion\R3OctavosSimpson\simpson38_1_Respuesta.resx">
       <DependentUpon>simpson38_1_Respuesta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MN_OR\Integracion\Newton-CotesC\Newton-CotesC_1.resx">
